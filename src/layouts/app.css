@@ -83,7 +83,7 @@
 
 
 .switch-name {
-    --dark-sky: rgb(49, 49, 49);
+    --dark-sky: black;
     --moon: white;
     --light-sky: white;
     --sun: black;

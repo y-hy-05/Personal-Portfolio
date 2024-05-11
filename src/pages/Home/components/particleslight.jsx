@@ -8,7 +8,7 @@ import { MyContext } from "../../../utils/ContextProvider";
 
 
 
-const ParticlesComponent = (props) => {
+const ParticlesComponentlight = (props) => {
 
     const [init, setInit] = useState(false);
     // this should be run only once per application lifetime
@@ -30,14 +30,15 @@ const ParticlesComponent = (props) => {
         // console.log(container);
     };
 
-    const [dark , toggleBoolean] = useContext(MyContext)
     // console.log(dark);
+    
+    const [dark , toggleBoolean] = useContext(MyContext);
 
     const options = useMemo(
         () => ({
             background: {
                 color: {
-                    value: dark ? "#000000": "#FFFFFF"
+                    value: "#f9f4d9",
                 },
             },
             fpsLimit: 120,
@@ -67,7 +68,7 @@ const ParticlesComponent = (props) => {
                     value: "#2596be",
                 },
                 links: {
-                    color: "#FFFFFF",
+                    color: "#000000",
                     distance: 150,
                     enable: true,
                     opacity: 0.5,
@@ -104,8 +105,9 @@ const ParticlesComponent = (props) => {
         [],
     );
 
+    // console.log(dark);
 
     return <Particles id={props.id} init={particlesLoaded} options={options} />;
 };
 
-export default ParticlesComponent;
+export default ParticlesComponentlight;
