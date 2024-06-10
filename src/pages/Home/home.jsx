@@ -1,9 +1,14 @@
+import { Layout } from '../Layout/layout';
+import '../../pages/Layout/components/app.sass'
+import { Container } from './components/homeContainer';
 
-import { FirstSection, Home } from './components/homeSection1';
-export const HomePage = () => {
+
+export const Home = () => {
     return (
         <>
-            <Home/>
+            <Layout/>
+            <Container/>
         </>
     );
-}
+};
+
