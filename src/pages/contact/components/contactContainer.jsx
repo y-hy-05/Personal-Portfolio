@@ -8,9 +8,9 @@ export const ContactContainer = () => {
     return (
         <>
             <div className={dark ? " w-[100%] h-[85vh]  flex items-center justify-center gap-10 text-black   " : " w-[100%] md:h-[85vh] h-[78vh] sm:h-[82vh]  flex md:flex-row flex-col-reverse items-center justify-center gap-6 text-white   "}>
-                <span className=' md:w-[40%] w-[100%] flex-col justify-center text-center  md:mt-0 mt-3 md:gap-6  items-center'>
+                <span className=' md:w-[40%] w-[100%] flex-col justify-center text-center  md:mt-0 mt-3 md:gap-6   items-center'>
                     <h1 className='md:text-[60px] text-[28px] font-[briem-extrabold] hover:text-[#2596be]  transition duration-300 cursor-pointer '>Let's Work Together</h1>
-                    <div className="md:w-[60%] w-[100%] flex flex-col  gap-3 md:mt-0 mt-8">
+                    <div className="md:w-full w-[100%] flex flex-col  justify-center items-center gap-3 md:mt-0 mt-8">
                         <span className='flex font-[briem-bold] md:text-[30px] text-nowrap text-[18px] hover:text-[#4c285c] transition duration-300 w-[100%] items-center justify-center md:gap-3 gap-2'>
                             <p className=''>Visit My Github</p>
                             <FaGithub className='text-[#4c285c] md:text-[16px] text-[30px]' />
