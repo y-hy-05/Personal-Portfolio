@@ -5,7 +5,7 @@ import { Layout } from '../Layout/layout';
 import Skills from '../skills/skills';
 import { Contact } from '../contact/contact';
 
-export const Test = () => {
+export const OnePage = () => {
     return (
         <>
             <Layout />

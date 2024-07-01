@@ -4,16 +4,14 @@ import { MyProvider } from './utils/ContextProvider';
 import { About } from './pages/About/about';import { Home } from './pages/Home/home';
 import Skills from './pages/skills/skills';
 import { Contact } from './pages/contact/contact';
-import { Test } from './pages/test/test';
+import { OnePage, Test } from './pages/OnePage/onePage';
+import { Wrong } from './pages/wrongUrl/wrong';
 function App() {
   return (
     <MyProvider>
       <Routes >
-        <Route path='/' element={<Home/>} />
-        <Route path='/about' element={<About/>} />
-        <Route path='/skills' element={<Skills/>} />
-        <Route path='/contact' element={<Contact/>} />
-        <Route path='/test' element={<Test/>} />
+        <Route path='/' element={<OnePage/>} />
+        <Route path='*' element={<Wrong/>} />
       </Routes >
     </MyProvider>
 

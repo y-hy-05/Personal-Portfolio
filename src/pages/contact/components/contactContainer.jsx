@@ -7,7 +7,7 @@ export const ContactContainer = () => {
     const [dark, toggleBoolean] = useContext(MyContext)
     return (
         <>
-            <div className={dark ? " w-[100%] py-8 p-3 md:py-16  flex md:flex-row flex-col-reverse items-center justify-center gap-6 text-black  " : "  w-[100%] py-8 p-3 md:py-16  flex md:flex-row flex-col-reverse items-center justify-center gap-6 text-white  "}>
+            <div className={dark ? " w-[100%] py-10 p-3 md:py-16  flex md:flex-row flex-col-reverse items-center justify-center gap-6 text-black  " : "  w-[100%] py-8 p-3 md:py-16  flex md:flex-row flex-col-reverse items-center justify-center gap-6 text-white  "}>
                 <span className=' md:w-[40%] w-[100%] flex flex-col justify-center text-center  md:mt-0 mt-3 md:gap-10 items-center'>
                     <h1 className='md:text-[60px] text-[28px] md:flex hidden font-[briem-extrabold] hover:text-[#2596be]  transition duration-300 cursor-pointer '>Let's Work Together</h1>
                     <div className="md:w-full w-[100%] flex flex-col  justify-center items-center gap-3 md:mt-0 mt-8">
@@ -21,7 +21,7 @@ export const ContactContainer = () => {
                         </span>
                     </div>
                 </span>
-                <form className={dark ? "contactForm md:p-4 bg-[#c2bbbb81] p-3 flex flex-col items-center md:w-[40%] w-[100%] gap-2 font-[briem-medium] rounded-[20px]" : "contactForm md:p-4 bg-[#0000007e] flex flex-col items-center md:w-[40%] w-[100%] gap-2 font-[briem-medium] rounded-[20px]"}>
+                <form className={dark ? "contactForm md:p-4 bg-[#c2bbbb81] p-3 flex flex-col items-center md:w-[40%] w-[100%] gap-2 font-[briem-medium] rounded-[20px]" : "contactForm md:p-4  flex flex-col items-center md:w-[40%] w-[100%] gap-2 font-[briem-medium] rounded-[20px]"}>
                     <span className=' flex flex-col gap-[6px] w-[90%]'>
                         <label htmlFor="" className='text-[22px]  hover:text-[#2596be] transition duration-300  ' >Your Name</label>
                         <input type="text" required name="" id="" className='p-2 rounded-[14px]  text-black' placeholder='enter your name' />
