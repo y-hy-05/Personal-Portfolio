@@ -8,13 +8,13 @@ const AboutContainer = () => {
     const navigate = useNavigate()
     return (
         <>
-            <div className="about-container w-[100%] md:h-[85vh] h-[75vh]  flex items-center justify-center p-5 ">
-                <div className={dark ? "textarea h-[100%] md:w-[80%] w-[100%] flex justify-center flex-col md:gap-10 gap-[40px] bg-[#f0f0f0a0] text-black rounded-[20px] md:p-0 p-4  transition duration-300" :"textarea h-[100%] md:w-[80%] w-[100%] flex justify-center flex-col md:gap-10 gap-[40px] bg-[#00000085] text-white rounded-[20px] md:p-0 p-4 transition duration-300 "}>
-                    <h1 className='md:text-[35px] text-[43px] font-[briem-extrabold] cursor-pointer hover:text-[#2596be]'>About Me</h1>
-                    <p className='md:text-[24px] text-[20px] font-[briem-medium] w-[100%]'>Hi! I'm Yahya Jmilou, a passionate young web developer with a love for creating dynamic
-                        and responsive websites. With a solid foundation in HTML, CSS, and JavaScript, I enjoy
+            <div className="about-container w-[100%]  py-14 md:py-20 lg:py-24   flex items-center justify-center md:p-5 p-4 ">
+            <div className={dark ? "textarea  w-[100%] flex justify-center flex-col gap-10 bg-[#c2bbbb81] text-black rounded-[14px] md:p-4 p-3 transition duration-300 " :"textarea  w-[100%] flex justify-center flex-col gap-10 bg-[#00000013] text-white rounded-[14px] md:p-4 p-3 transition duration-300 "}>
+                    <h1 className='text-[43px] md:text-[35px] lg:text-[40px] xl:text-[58px] font-[briem-extrabold] cursor-pointer text-center hover:text-[#2596be]'>About Me</h1>
+                    <p className='text-[25px] md:text-[24px] lg:text-[30px] xl:text-[32px] text-center md:text-start   font-[briem-medium] w-[100%]'>Hi! I'm Yahya Jmilou, a passionate young web developer with a love for creating dynamic
+                        and responsive websites. With a solid foundation in <span className='text-[#E34F26]'>HTML</span>, <span className='text-[#2965F1]'>CSS</span>, and <span className='text-[#f1dd44]'>JavaScript</span>, I enjoy
                         turning ideas into interactive digital experiences. I’m always open to learn new technologies
-                        and improve my skills to build innovative and user-friendly web applications. <span  onClick={() => navigate("/contact")} className='text-[#2596be] font-[briem-extrabold] md:text-[26px] text-[20px] cursor-pointer'>Let's connect</span> and
+                        and improve my skills to build innovative and user-friendly web applications. <span  onClick={() => navigate("/contact")} className='text-[#2596be] font-[briem-extrabold] cursor-pointer'>Let's connect</span> and
                         create something amazing together!</p>
                 </div>
             </div>

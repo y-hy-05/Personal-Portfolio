@@ -10,24 +10,34 @@ export const Header = () => {
 
     const [respNav, setRespNav] = useState(true)
 
+    const navFunction = ( ) => {
+
+        setRespNav(!respNav)
+
+            document.body.classList.toggle("overflow-hidden")
+    }
+
+    
+    
+
     const navigate = useNavigate()
 
     return (
         <>
             <header className={dark ? "text-black transition duration-150 relative" : "text-white transition duration-150 relative"}>
-                <nav className={dark ? 'nav  w-[100%] md:p-[40px] py-[20px] px-3 md:h-[10vh] flex items-center   md:justify-center justify-between md:gap-0 gap-3' : 'nav  w-[100%] md:p-[40px] py-[20px] px-3 md:h-[10vh] flex items-center   md:justify-center justify-between  md:gap-0 gap-3'}>
-                    <div className="md:w-[88%] w-[90%] flex items-center justify-between md:py-0 py-[12px]  ">
-                        <h1 className='md:text-[35px] text-[32px] font-[briem-extrabold]  font-bold hover:text-[#2596be] transition cursor-pointer' onClick={() => navigate("/")} >Yahya Codes</h1>
-                        <div className="flex items-center md:justify-between  md:w-[60%] ">
-                            <ul className='md:flex  justify-between hidden md:w-[80%] font-bold text-[20px] '>
+                <nav className='nav w-[100%] md:px-[10px] md:py-2 py-[20px]   md:h-[14vh] flex items-center px-6    md:justify-center justify-between  md:gap-0 gap-3'>
+                    <div className="md:w-[95%] w-[95%] flex items-center justify-between  ">
+                        <h1 className='md:text-[20px] text-[26px] lg:text-[28px] xl:text-[40px] font-[briem-extrabold]  font-bold hover:text-[#2596be] transition cursor-pointer' onClick={() => navigate("/")} >Yahya Codes</h1>
+                        <div className="flex items-center md:justify-between md:gap-4  md:w-[65%] ">
+                            <ul className='md:flex md:gap-2  justify-between hidden md:w-[75%] font-bold md:text-[16px] lg:text-[20px] xl:text-[26px] '>
                                 <li className='hover:text-[#2596be] transition cursor-pointer font-[briem-bold] ' onClick={() => navigate("/")} >Home</li>
                                 <li className='hover:text-[#2596be] transition cursor-pointer font-[briem-bold] ' onClick={() => navigate("/about")} >About Me</li>
                                 <li className='hover:text-[#2596be] transition cursor-pointer font-[briem-bold] ' onClick={() => navigate("/skills")} >Skills</li>
                                 <li className='hover:text-[#2596be] transition cursor-pointer font-[briem-bold] ' onClick={() => navigate("/about")} >Projects</li>
                                 <li className='hover:text-[#2596be] transition cursor-pointer font-[briem-bold] ' onClick={() => navigate("/contact")} >Contact Me</li>
                             </ul>
-                            <label className="switch-name  mt-[5px]" >
-                                <input type="checkbox" className="checkbox" checked={dark} onChange={() => {
+                            <label className={dark?"switch-name  mt-[5px] border-[black] border-[3px] ":"switch-name  mt-[5px] border-[white] border-[3px] "} >
+                                <input type="checkbox" className="checkbox " checked={dark} onChange={() => {
                                     setDark(!dark)
                                 }} />
                                 <div className="back"></div>
@@ -42,7 +52,7 @@ export const Header = () => {
                     </div>
 
                     <label className="hamburger md:hidden" checked={respNav} >
-                        <input type="checkbox" onClick={() =>{ setRespNav(!respNav)} } />
+                        <input type="checkbox" onClick={() =>{ navFunction()} } />
                         <svg viewBox="0 0 32 32">
                             <path class={dark ? "line line-top-bottom  stroke-black" : "line line-top-bottom stroke-white "} d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
                             <path class={dark ? "line stroke-black" : " line stroke-white "} d="M7 16 27 16"></path>
@@ -50,7 +60,7 @@ export const Header = () => {
                     </label>
                 </nav>
 
-                <span className={respNav?'w-[100%] hidden justify-center opacity-0 absolute mt-7 transition duration-200':'w-[100%] flex justify-center absolute opacity-100 mt-7 transition duration-200'}>
+                <span className={respNav?'hidden':'w-[100%] flex justify-center absolute opacity-100 mt-7 transition duration-200'}>
                     <ul className='flex flex-col  justify-evenly items-center bg-[#6f6d6dea] rounded-[25px] md:hidden text-[30px] z-50  h-[70vh] w-[90%]  '>
                         <li className='hover:text-[#2596be] transition cursor-pointer font-[briem-bold] ' onClick={() => navigate("/")} >Home</li>
                         <li className='hover:text-[#2596be] transition cursor-pointer font-[briem-bold] ' onClick={() => navigate("/about")} >About Me</li>

@@ -11,7 +11,7 @@ export const Layout = () => {
         <>
             <div className="App">
                 <Header/>
-                {dark?  <ParticlesComponentlight id="particles" className="transition duration-1000 ease-in-out" />:<ParticlesComponentDark id="particles" className="transition duration-1000 ease-in-out" /> }
+                {dark?  <ParticlesComponentlight id="particles"  />:<ParticlesComponentDark id="particles" className="transition duration-1000 ease-in-out" /> }
             </div>
         </>
     );

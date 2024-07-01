@@ -5,7 +5,7 @@ import { SkillsContainer } from './components/skillsContainer';
 const Skills = () => {
     return (
         <>
-            <Layout/>
+            {/* <Layout/> */}
             <SkillsContainer/>
         </>
     );

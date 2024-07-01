@@ -103,7 +103,7 @@ const ParticlesComponentlight = (props) => {
     );
 
 
-    return <Particles id={props.id} init={particlesLoaded} options={options} />;
+    return <Particles className="" id={props.id} init={particlesLoaded}  options={options} />;
 };
 
 export default ParticlesComponentlight;
