@@ -7,6 +7,7 @@ module.exports = {
     flowbite.content(),
     
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       

@@ -4,6 +4,7 @@ import AboutContainer from '../About/components/aboutContainer';
 import { Layout } from '../Layout/layout';
 import Skills from '../skills/skills';
 import { Contact } from '../contact/contact';
+import { Projects } from '../Projects/projects';
 
 export const OnePage = () => {
     return (
@@ -12,6 +13,7 @@ export const OnePage = () => {
             <Container/>
             <AboutContainer/>
             <Skills/>
+            <Projects/>
             <Contact/>
         </>
     );

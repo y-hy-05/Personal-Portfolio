@@ -85,9 +85,9 @@
 
 
 .switch-name {
-    --dark-sky: black;
+    --dark-sky: transparent;
     --moon: white;
-    --light-sky: white;
+    --light-sky: transparent;
     --sun: black;
     display: inline-block;
     position: relative;
