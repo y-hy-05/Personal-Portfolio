@@ -19,7 +19,7 @@ export const Projects = () => {
 
     return (
         <>
-            <div className="text-white bg-red-600 dark:text-black font-[briem-medium] md:py-14 lg:py-16 py-20">
+            <div className="text-white  dark:text-black font-[briem-medium] md:py-14 lg:py-16 py-20">
                 <span className='w-[100%] flex justify-center'><h1 className='text-[35px] md:text-[35px] lg:text-[50px] xl:text-[60px] cursor-pointer hover:text-[#2596be] transition duration-300 font-[briem-bold]'>Projects</h1></span>
                 <div className="p-10">
                     
