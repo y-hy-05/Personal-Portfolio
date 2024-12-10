@@ -85,7 +85,7 @@ const ParticlesComponentDark = (props) => {
                     density: {
                         enable: true,
                     },
-                    value: 300,
+                    value: 150,
                 },
                 opacity: {
                     value: 1.0,
