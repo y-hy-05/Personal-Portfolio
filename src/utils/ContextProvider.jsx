@@ -6,10 +6,7 @@ export const MyContext = createContext()
 export const MyProvider = ({ children }) => {
 
     const [dark, setDark] = useState(false)
-
     
-
-
     return (
         <>
 

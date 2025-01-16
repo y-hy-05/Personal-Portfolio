@@ -62,7 +62,7 @@ const ParticlesComponentlight = (props) => {
             },
             particles: {
                 color: {
-                    value: "#2596be",
+                    value: "#000",
                 },
                 links: {
                     color: "#000000",
