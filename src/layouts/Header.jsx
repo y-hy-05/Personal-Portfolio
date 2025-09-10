@@ -4,10 +4,15 @@ import "./app.css"
 import { MyContext } from '../utils/ContextProvider';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-scroll';
+import TransText from '../components/TransText';
+import Radio from '../components/LangDropDown';
 
 export const Header = () => {
 
-    const [dark, setDark] = useContext(MyContext)
+    const [dark, setDark, selectedLanguage, setSelectedLanguage, savedSelectedLanguage] = useContext(MyContext)
+
+    console.log('from header', selectedLanguage);
+
 
     const [respNav, setRespNav] = useState(true)
 
@@ -17,8 +22,6 @@ export const Header = () => {
         document.body.classList.toggle("overflow-hidden")
 
     }
-
-
 
 
     const navigate = useNavigate()
@@ -31,27 +34,33 @@ export const Header = () => {
                         <h1 className='md:text-[20px] text-[26px] lg:text-[28px] xl:text-[40px] font-[briem-extrabold]  font-bold hover:text-[#2596be] transition cursor-pointer' onClick={() => navigate("/")} >Yahya Jmilou</h1>
                         <div className="flex items-center md:justify-between md:gap-4  md:w-[65%] ">
                             <ul className='md:flex md:gap-2  justify-between hidden md:w-[75%] font-bold md:text-[16px] lg:text-[20px] xl:text-[26px] '>
-                                <li className='hover:text-[#2596be] transition cursor-pointer font-[briem-bold] '  >
-                                    <Link to="home" smooth={true} duration={1000}>
+                                {/* <li className='hover:text-[#2596be] transition cursor-pointer font-[briem-bold] '  >
+                                    <Link to="home" smooth={false} duration={500}>
                                         Home
                                     </Link>
-                                </li>
+                                </li> */}
                                 <li className='hover:text-[#2596be] transition cursor-pointer font-[briem-bold] '  >
-                                    <Link to="about" smooth={true} duration={1000}>
+                                    <Link to="about" duration={1000}>
                                         About Me
                                     </Link>
                                 </li>
                                 <li className='hover:text-[#2596be] transition cursor-pointer font-[briem-bold] ' >
-                                    <Link to="skills" smooth={true} duration={1000}>
+                                    <Link to="skills" duration={1000}>
                                         Skills
                                     </Link>
                                 </li>
                                 <li className='hover:text-[#2596be] transition cursor-pointer font-[briem-bold] ' >
-                                    <Link to="contact" smooth={true} duration={1000}>
+                                    <Link to="projects" smooth={true} duration={500}>
+                                        projects
+                                    </Link>
+                                </li>
+                                <li className='hover:text-[#2596be] transition cursor-pointer font-[briem-bold] ' >
+                                    <Link to="contact" smooth={true} duration={500}>
                                         Contact
                                     </Link>
                                 </li>
                             </ul>
+
                             <label className={dark ? "switch-name  mt-[5px] border-[black] border-[3px] " : "switch-name  mt-[5px] border-[white] border-[3px] "} >
                                 <input type="checkbox" className="checkbox " checked={dark} onChange={() => {
                                     setDark(!dark)

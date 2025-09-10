@@ -4,24 +4,33 @@ import { TypeAnimation } from 'react-type-animation';
 
 export const Container = () => {
 
-    const [dark] = useContext(MyContext)
+    const [dark, , , , selectedLanguage] = useContext(MyContext)
     return (
         <>
-            <div className={`home-container  transition duration-150 md:py-28 py-20 w-[100%] flex ${dark ? "text-black" : "text-white"}`}>
-                <span className='w-[100%] md:mt-4 mt-10  flex items-center justify-center lg:h-fit h-[20rem]'>
-                    <p className='font-[briem-bold] text-[28px] md:text-[35px] lg:text-[45px] xl:text-[55px] overflow-hidden  flex items-center justify-center text-center hover:text-[#2596be] transition cursor-pointer '>
+            <div className={`home-container transition duration-150  w-[100%] flex ${dark ? "text-black" : "text-white"}`}>
+                <span className='w-[100%] md:py-36 py-20 flex flex-col gap-8 items-center justify-center'>
+                    <p className='font-[briem-bold] text-[38px] md:text-[35px] lg:text-[6em] overflow-hidden  flex items-center justify-center text-center hover:text-[#2596be] transition cursor-pointer '>
                         <TypeAnimation
+                            key={`name-${selectedLanguage}`} // Unique key for name animation
                             sequence={[
-                                'I am Yahya Jmilou', // Types 'I am Yahya Jmilou'
-                                5000, // Waits 5s
-                                'I am a Web Developer', // Deletes 'Yahya Jmilou' and types 'a Web Developer'
-                                10000, // Waits 10s
+                                'Yahya Jmilou', //? Types 'Yahya Jmilou'
                             ]}
                             wrapper="span"
-                            cursor={true}
+                            cursor={false}
                             repeat={0}
                             speed={200}
-                            style={{ fontSize: '2em'}}
+                        />
+                    </p>
+                    <p className='font-[briem-bold] text-[28px] md:text-[35px] lg:text-[3rem] overflow-hidden  flex items-center justify-center text-center hover:text-[#2596be] transition cursor-pointer '>
+                        <TypeAnimation
+                            key={`title-${selectedLanguage}`} // Unique key for title animation
+                            sequence={[
+                                `${selectedLanguage === 'en' ? 'A Software Developer' : selectedLanguage === 'fr' ? 'Un Développeur Logiciel' : 'Ein Software-Entwickler'}`,
+                            ]}
+                            wrapper="span"
+                            cursor={false}
+                            repeat={false}
+                            speed={200}
                         />
                     </p>
                 </span>
