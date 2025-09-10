@@ -135,7 +135,7 @@ export const Project = () => {
                                                 <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
                                                 <FaExternalLinkAlt className="text-lg group-hover:rotate-12 transition-transform duration-300" />
                                                 <span className="relative z-10">
-                                                    {selectedLanguage === 'en' ? 'View Live Demo' : selectedLanguage === 'fr' ? 'Voir la Démo' : 'Live-Demo Ansehen'}
+                                                    {selectedLanguage === 'en' ? 'View Live' : selectedLanguage === 'fr' ? 'Voir Live' : 'Live Ansehen'}
                                                 </span>
                                             </a>
                                         )}

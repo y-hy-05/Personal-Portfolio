@@ -9,7 +9,7 @@ import Radio from '../components/LangDropDown';
 
 export const Header = () => {
 
-    const [dark, setDark, selectedLanguage, setSelectedLanguage, savedSelectedLanguage] = useContext(MyContext)
+    const [dark, setDark, skills, projects, selectedLanguage, setSelectedLanguage, savedSelectedLanguage] = useContext(MyContext)
 
     console.log('from header', selectedLanguage);
 
@@ -41,22 +41,22 @@ export const Header = () => {
                                 </li> */}
                                 <li className='hover:text-[#2596be] transition cursor-pointer font-[briem-bold] '  >
                                     <Link to="about" duration={1000}>
-                                        About Me
+                                        {selectedLanguage === 'en' ? "About Me" : selectedLanguage === 'fr' ? "A Propos De Moi" : "Über Mich"}
                                     </Link>
                                 </li>
                                 <li className='hover:text-[#2596be] transition cursor-pointer font-[briem-bold] ' >
                                     <Link to="skills" duration={1000}>
-                                        Skills
+                                        {selectedLanguage === 'en' ? "Skills" : selectedLanguage === 'fr' ? "Compétences" : "Fähigkeiten"}
                                     </Link>
                                 </li>
                                 <li className='hover:text-[#2596be] transition cursor-pointer font-[briem-bold] ' >
                                     <Link to="projects" smooth={true} duration={500}>
-                                        projects
+                                        {selectedLanguage === 'en' ? "Projects" : selectedLanguage === 'fr' ? "Projets" : "Projekte"}
                                     </Link>
                                 </li>
                                 <li className='hover:text-[#2596be] transition cursor-pointer font-[briem-bold] ' >
                                     <Link to="contact" smooth={true} duration={500}>
-                                        Contact
+                                        {selectedLanguage === 'en' ? "Contact" : selectedLanguage === 'fr' ? "Contactez-moi" : "Kontakt"}
                                     </Link>
                                 </li>
                             </ul>

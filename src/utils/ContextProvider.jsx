@@ -3,10 +3,15 @@ import { FaBootstrap, FaCss3, FaDatabase, FaHtml5, FaLaravel, FaPhp, FaReact, Fa
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiExpo, SiInertia, SiPostman, SiTailwindcss } from "react-icons/si";
 import lionsgeek from '../assets/img/lionsgeek.svg'
+import yesAfrica from '../assets/img/yesAfrica.png'
 import lionsgeek1 from '../assets/img/lg1.png'
 import lionsgeek2 from '../assets/img/lg2.png'
 import lionsgeek3 from '../assets/img/lg3.png'
 import lionsgeek4 from '../assets/img/lg4.png'
+import yes1 from '../assets/img/yes1.png'
+import yes2 from '../assets/img/yes2.png'
+import yes3 from '../assets/img/yes3.png'
+import yes4 from '../assets/img/yes4.png'
 
 export const MyContext = createContext()
 
@@ -128,6 +133,67 @@ export const MyProvider = ({ children }) => {
             },
             site: "https://lionsgeek.ma",
             github: "https://github.com/lionsgeeks/lionsgeek"
+        },
+        {
+            id: 2,
+            title: "Yes Africa",
+            description: {
+                en: 'I collaborated on developing and delivering a modern website for Yes Africa, designed with a focus on user-friendly interfaces and smooth backend integration.The platform is fully responsive, built with a React.js frontend and a Laravel backend, ensuring both an engaging user experience and strong backend functionality for content management and user interactions. My contributions included updating the UI to improve usability and overall design consistency.',
+                de: 'Ich habe im Team an der Entwicklung einer modernen Webseite für Yes Africa gearbeitet. Ziel war eine benutzerfreundliche Oberfläche und eine gute Verbindung zum Backend. Die Seite ist komplett responsive und wurde mit React.js im Frontend und Laravel im Backend gebaut. So bietet sie eine gute Nutzererfahrung und eine starke Verwaltung von Inhalten und Benutzern. Mein Beitrag war vor allem das Aktualisieren der UI, um die Bedienung und das Design zu verbessern.',
+                fr: 'J’ai collaboré au développement et à la mise en ligne du site web moderne de Yes Africa, conçu avec une interface conviviale et une intégration fluide du backend. Le site est entièrement responsive et combine un frontend en React.js avec un backend en Laravel, garantissant une expérience utilisateur attrayante et une gestion robuste du contenu et des interactions. Ma contribution a porté notamment sur l’amélioration de l’interface utilisateur afin d’optimiser la convivialité et la cohérence visuelle.'
+            },
+            technologies: [
+                skills[1],
+                skills[0],
+                skills[5],
+                skills[6],
+                skills[7],
+                skills[8],
+                skills[2]
+            ],
+            logo: yesAfrica,
+            features: {
+                en: [
+                    "Responsive and modern design",
+                    "Content management system",
+                    "User registration and authentication",
+                    "Dynamic content rendering",
+                    "SEO optimization",
+                    "Contact and inquiry forms",
+                    "Multi-page navigation with smooth transitions"
+                ],
+                de: [
+                    "Modernes und responsives Design",
+                    "Inhaltsverwaltungssystem",
+                    "Benutzerregistrierung und Anmeldung",
+                    "Dynamische Inhaltsanzeige",
+                    "SEO-Optimierung",
+                    "Kontakt- und Anfrageformulare",
+                    "Mehrseitige Navigation mit weichen Übergängen"
+                ],
+                fr: [
+                    "Design moderne et responsive",
+                    "Système de gestion de contenu",
+                    "Inscription et authentification des utilisateurs",
+                    "Affichage dynamique du contenu",
+                    "Optimisation SEO",
+                    "Formulaires de contact et de demande",
+                    "Navigation multi-page avec transitions fluides"
+                ]
+            },
+            screenshots: [
+                yes1,
+                yes2,
+                yes3,
+                yes4,
+            ],
+            role: {
+                en: 'Internship',
+                fr: 'Stage',
+                de: 'Praktikum'
+            },
+            site: "https://youthempowermentsummit.africa",
+            github: "https://github.com/lionsgeeks/yes-africa"
         },
     ];
 
