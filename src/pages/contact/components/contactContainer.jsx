@@ -132,7 +132,7 @@ export const ContactContainer = () => {
 
                                     {/* LinkedIn Link */}
                                     <a
-                                        href="https://linkedin.com/in/yahya"
+                                        href="https://www.linkedin.com/in/yahya-jmilou-07567628a/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="group flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:border-[#0077B5]/50 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#0077B5]/20"
