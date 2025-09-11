@@ -140,7 +140,7 @@ const Radio = () => {
                 onClick={() => setIsOpen(!isOpen)}
                 className={`
                     relative flex items-center gap-3 px-4 py-3 rounded-lg
-                    transition-all duration-300 font-[briem-medium]
+                    transition-all duration-300 font-[roboto-regular]
                     text-sm sm:text-base md:text-lg sm:gap-4 sm:px-6 sm:py-4
                     min-w-[140px] sm:min-w-[180px] md:min-w-[200px] overflow-hidden
                     ${dark
@@ -208,7 +208,7 @@ const Radio = () => {
                                 onClick={() => handleLanguageChange(lang)}
                                 className={`
                                     w-full flex items-center gap-3 sm:gap-4 px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg
-                                    transition-all duration-200 font-[briem-medium]
+                                    transition-all duration-200 font-[roboto-regular]
                                     text-sm sm:text-base md:text-lg
                                     ${selectedLanguage === lang
                                         ? 'bg-[#2596be]/20 border border-[#2596be]/30'

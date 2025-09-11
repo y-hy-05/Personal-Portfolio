@@ -31,30 +31,25 @@ export const Header = () => {
             <header className={dark ? "text-black transition duration-150  relative" : "text-white transition duration-150 relative"}>
                 <nav className='nav w-[100%]  md:px-[10px] md:py-2 py-[20px]   md:h-[14vh] flex items-center     md:justify-center justify-center  md:gap-0 gap-3'>
                     <div className="md:w-[95%] w-[95%] flex items-center justify-between  ">
-                        <h1 className='md:text-[20px] text-[26px] lg:text-[28px] xl:text-[40px] font-[briem-extrabold]  font-bold hover:text-[#2596be] transition cursor-pointer' onClick={() => navigate("/")} >Yahya Jmilou</h1>
+                        <h1 className='md:text-[20px] text-[26px] lg:text-[28px] xl:text-[40px] font-[roboto-bold] hover:text-[#2596be] transition cursor-pointer' onClick={() => navigate("/")} >Yahya Jmilou</h1>
                         <div className="flex items-center md:justify-between md:gap-4  md:w-[65%] ">
                             <ul className='md:flex md:gap-2  justify-between hidden md:w-[75%] font-bold md:text-[16px] lg:text-[20px] xl:text-[26px] '>
-                                {/* <li className='hover:text-[#2596be] transition cursor-pointer font-[briem-bold] '  >
-                                    <Link to="home" smooth={false} duration={500}>
-                                        Home
-                                    </Link>
-                                </li> */}
-                                <li className='hover:text-[#2596be] transition cursor-pointer font-[briem-bold] '  >
+                                <li className='hover:text-[#2596be] transition cursor-pointer font-[roboto-regular] '  >
                                     <Link to="about" duration={1000}>
                                         {selectedLanguage === 'en' ? "About Me" : selectedLanguage === 'fr' ? "A Propos De Moi" : "Über Mich"}
                                     </Link>
                                 </li>
-                                <li className='hover:text-[#2596be] transition cursor-pointer font-[briem-bold] ' >
+                                <li className='hover:text-[#2596be] transition cursor-pointer font-[roboto-regular] ' >
                                     <Link to="skills" duration={1000}>
                                         {selectedLanguage === 'en' ? "Skills" : selectedLanguage === 'fr' ? "Compétences" : "Fähigkeiten"}
                                     </Link>
                                 </li>
-                                <li className='hover:text-[#2596be] transition cursor-pointer font-[briem-bold] ' >
+                                <li className='hover:text-[#2596be] transition cursor-pointer font-[roboto-regular] ' >
                                     <Link to="projects" smooth={true} duration={500}>
                                         {selectedLanguage === 'en' ? "Projects" : selectedLanguage === 'fr' ? "Projets" : "Projekte"}
                                     </Link>
                                 </li>
-                                <li className='hover:text-[#2596be] transition cursor-pointer font-[briem-bold] ' >
+                                <li className='hover:text-[#2596be] transition cursor-pointer font-[roboto-regular] ' >
                                     <Link to="contact" smooth={true} duration={500}>
                                         {selectedLanguage === 'en' ? "Contact" : selectedLanguage === 'fr' ? "Contactez-moi" : "Kontakt"}
                                     </Link>

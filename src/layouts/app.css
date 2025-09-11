@@ -34,6 +34,26 @@
         /* Specify the correct path to the font files */
 }
 
+@font-face{
+    font-family: 'roboto-regular';
+    src: url('../assets/fonts/newFont/static/Roboto-Regular.ttf') format('truetype')
+}
+
+@font-face{
+    font-family: 'roboto-bold';
+    src: url('../assets/fonts/newFont/static/Roboto-Bold.ttf') format('truetype')
+}
+
+@font-face{
+    font-family: 'roboto-medium';
+    src: url('../assets/fonts/newFont/static/Roboto-Medium.ttf') format('truetype')
+}
+
+@font-face{
+    font-family: 'roboto-light';
+    src: url('../assets/fonts/newFont/static/Roboto-Light.ttf') format('truetype')
+}
+
 .hamburger {
     cursor: pointer;
 }

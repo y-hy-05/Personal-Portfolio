@@ -42,13 +42,13 @@ export const Project = () => {
             <ProjectHeader />
 
             {/* Main Content */}
-            <main className={`min-h-screen ${dark ? 'text-black' : 'text-white'} font-[briem-medium] pt-8 pb-20`}>
+            <main className={`min-h-screen ${dark ? 'text-black' : 'text-white'} font-[roboto-regular] pt-8 pb-20`}>
                 <div className="max-w-6xl mx-auto px-4 md:px-8">
 
                     {/* Back Button */}
                     <button
                         onClick={() => navigate('/')}
-                        className={`back-button flex items-center gap-2 mb-8 px-4 py-2 rounded-lg border-2 border-[#2596be] hover:bg-[#2596be] ${dark ? 'text-black hover:text-white' : 'text-white'} transition-colors duration-200 font-[briem-medium]`}
+                        className={`back-button flex items-center gap-2 mb-8 px-4 py-2 rounded-lg border-2 border-[#2596be] hover:bg-[#2596be] ${dark ? 'text-black hover:text-white' : 'text-white'} transition-colors duration-200 font-[roboto-regular]`}
                     >
                         <FaArrowLeft className="text-sm" />
                         {selectedLanguage === 'en' ? 'Back to Portfolio' : selectedLanguage === 'fr' ? 'Retour au Portfolio' : 'Zurück zum Portfolio'}
@@ -95,7 +95,7 @@ export const Project = () => {
                                                         <div className="w-2 h-2 bg-[#2596be] rounded-full"></div>
                                                         <div className="absolute inset-0 w-2 h-2 bg-[#2596be] rounded-full animate-ping opacity-75"></div>
                                                     </div>
-                                                    <span className="text-[#2596be] font-[briem-bold] text-sm md:text-base tracking-wide">
+                                                    <span className="text-[#2596be] font-[roboto-bold] text-sm md:text-base tracking-wide">
                                                         {currentProject.role[selectedLanguage]}
                                                     </span>
                                                 </div>
@@ -104,7 +104,7 @@ export const Project = () => {
 
                                         {/* Project Title - Enhanced */}
                                         <div className="relative">
-                                            <h1 className={`text-4xl md:text-5xl lg:text-6xl font-[briem-extrabold] ${dark ? 'text-black' : 'text-white'} leading-tight tracking-tight`}>
+                                            <h1 className={`text-4xl md:text-5xl lg:text-6xl font-[roboto-bold] ${dark ? 'text-black' : 'text-white'} leading-tight tracking-tight`}>
                                                 <span className="bg-gradient-to-r from-current via-[#2596be] to-current bg-clip-text hover:text-transparent transition-all duration-500 cursor-pointer">
                                                     {currentProject.title}
                                                 </span>
@@ -116,7 +116,7 @@ export const Project = () => {
 
                                     {/* Description - Enhanced */}
                                     <div className="relative">
-                                        <p className={`text-xl md:text-2xl font-[briem-medium] ${dark ? 'text-gray-600' : 'text-gray-300'} leading-relaxed`}>
+                                        <p className={`text-xl md:text-2xl font-[roboto-regular] ${dark ? 'text-gray-600' : 'text-gray-300'} leading-relaxed`}>
                                             {currentProject.description[selectedLanguage]}
                                         </p>
                                         {/* Quote decoration */}
@@ -130,7 +130,7 @@ export const Project = () => {
                                                 href={currentProject.site}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="group relative overflow-hidden flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-[#2596be] to-[#1e7a9a] text-white rounded-xl font-[briem-bold] text-lg shadow-xl hover:shadow-2xl hover:shadow-[#2596be]/25 transition-all duration-300 hover:scale-105"
+                                                className="group relative overflow-hidden flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-[#2596be] to-[#1e7a9a] text-white rounded-xl font-[roboto-bold] text-lg shadow-xl hover:shadow-2xl hover:shadow-[#2596be]/25 transition-all duration-300 hover:scale-105"
                                             >
                                                 <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
                                                 <FaExternalLinkAlt className="text-lg group-hover:rotate-12 transition-transform duration-300" />
@@ -143,7 +143,7 @@ export const Project = () => {
                                             href={currentProject.github}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className={`group relative overflow-hidden flex items-center justify-center gap-3 px-8 py-4 border-2 border-[#2596be] hover:bg-[#2596be] ${dark ? 'text-black hover:text-white' : 'text-white'} rounded-xl font-[briem-bold] text-lg backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-[#2596be]/25`}
+                                            className={`group relative overflow-hidden flex items-center justify-center gap-3 px-8 py-4 border-2 border-[#2596be] hover:bg-[#2596be] ${dark ? 'text-black hover:text-white' : 'text-white'} rounded-xl font-[roboto-bold] text-lg backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-[#2596be]/25`}
                                         >
                                             <div className="absolute inset-0 bg-gradient-to-r from-[#2596be]/0 via-[#2596be]/10 to-[#2596be]/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
                                             <FaGithub className="text-xl group-hover:rotate-12 transition-transform duration-300" />
@@ -159,7 +159,7 @@ export const Project = () => {
 
                     {/* Technologies Section */}
                     <div className="card-inner rounded-xl p-8 mb-8">
-                        <h2 className={`text-2xl md:text-3xl font-[briem-bold] ${dark ? 'text-black' : 'text-white'} mb-6 flex items-center gap-3`}>
+                        <h2 className={`text-2xl md:text-3xl font-[roboto-bold] ${dark ? 'text-black' : 'text-white'} mb-6 flex items-center gap-3`}>
                             <FaCog className="text-[#2596be]" />
                             {selectedLanguage === 'en' ? 'Technologies Used' : selectedLanguage === 'fr' ? 'Technologies Utilisées' : 'Verwendete Technologien'}
                         </h2>
@@ -167,7 +167,7 @@ export const Project = () => {
                             {currentProject.technologies.map((tech, index) => (
                                 <span
                                     key={index}
-                                    className="tech-badge inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-[briem-medium] bg-white/10 backdrop-blur-sm border border-white/20"
+                                    className="tech-badge inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-[roboto-regular] bg-white/10 backdrop-blur-sm border border-white/20"
                                     style={{ color: tech.color }}
                                 >
                                     <span className="text-lg">{tech.icon}</span>
@@ -179,7 +179,7 @@ export const Project = () => {
 
                     {/* Features Section */}
                     <div className="card-inner rounded-xl p-8 mb-8">
-                        <h2 className={`text-2xl md:text-3xl font-[briem-bold] ${dark ? 'text-black' : 'text-white'} mb-6 flex items-center gap-3`}>
+                        <h2 className={`text-2xl md:text-3xl font-[roboto-bold] ${dark ? 'text-black' : 'text-white'} mb-6 flex items-center gap-3`}>
                             <FaCheck className="text-[#2596be]" />
                             {selectedLanguage === 'en' ? 'Key Features' : selectedLanguage === 'fr' ? 'Fonctionnalités Clés' : 'Hauptfunktionen'}
                         </h2>
@@ -187,7 +187,7 @@ export const Project = () => {
                             {currentProject.features[selectedLanguage].map((feature, index) => (
                                 <div key={index} className="feature-list-item flex items-start gap-3 cursor-pointer">
                                     <FaCheck className="text-[#2596be] mt-1 flex-shrink-0" />
-                                    <span className={`font-[briem-medium] ${dark ? 'text-gray-700' : 'text-gray-300'}`}>
+                                    <span className={`font-[roboto-regular] ${dark ? 'text-gray-700' : 'text-gray-300'}`}>
                                         {feature}
                                     </span>
                                 </div>
@@ -198,7 +198,7 @@ export const Project = () => {
                     {/* Pictures Carousel Section */}
                     {currentProject.screenshots && currentProject.screenshots.length > 0 && (
                         <div className="card-inner rounded-xl p-8 mb-8">
-                            <h2 className={`text-2xl md:text-3xl font-[briem-bold] ${dark ? 'text-black' : 'text-white'} mb-6 flex items-center gap-3`}>
+                            <h2 className={`text-2xl md:text-3xl font-[roboto-bold] ${dark ? 'text-black' : 'text-white'} mb-6 flex items-center gap-3`}>
                                 <FaImages className="text-[#2596be]" />
                                 {selectedLanguage === 'en' ? 'Project Screenshots' : selectedLanguage === 'fr' ? 'Captures d\'écran du Projet' : 'Projekt-Screenshots'}
                             </h2>
@@ -216,7 +216,7 @@ export const Project = () => {
 
                                     {/* Image Counter */}
                                     <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm rounded-lg px-3 py-1">
-                                        <span className="text-white font-[briem-medium] text-sm">
+                                        <span className="text-white font-[roboto-bold] text-sm">
                                             {currentImageIndex + 1} / {currentProject.screenshots.length}
                                         </span>
                                     </div>

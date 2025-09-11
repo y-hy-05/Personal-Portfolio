@@ -14,7 +14,7 @@ export const ProjectHeader = () => {
                 <nav className='nav w-[100%] md:px-[10px] md:py-2 py-[20px] md:h-[14vh] flex items-center md:justify-center justify-center md:gap-0 gap-3'>
                     <div className="md:w-[95%] w-[95%] flex items-center justify-between">
                         <h1 
-                            className='md:text-[20px] text-[26px] lg:text-[28px] xl:text-[40px] font-[briem-extrabold] font-bold hover:text-[#2596be] transition cursor-pointer' 
+                            className='md:text-[20px] text-[26px] lg:text-[28px] xl:text-[40px] font-[roboto-bold] hover:text-[#2596be] transition cursor-pointer'
                             onClick={() => navigate("/")}
                         >
                             Yahya Jmilou

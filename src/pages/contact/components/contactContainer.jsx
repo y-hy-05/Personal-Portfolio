@@ -76,7 +76,7 @@ export const ContactContainer = () => {
                 <div className="max-w-7xl mx-auto">
                     {/* Section Header */}
                     <div className="text-center mb-16">
-                        <h1 className={`text-4xl md:text-6xl lg:text-7xl font-[briem-extrabold] mb-6 ${dark ? 'text-black' : 'text-white'} hover:text-[#2596be] transition-colors duration-500 cursor-pointer`}>
+                        <h1 className={`text-4xl md:text-6xl lg:text-7xl font-[roboto-bold] mb-6 ${dark ? 'text-black' : 'text-white'} hover:text-[#2596be] transition-colors duration-500 cursor-pointer`}>
                             <span className="bg-gradient-to-r from-current via-[#2596be] to-current bg-clip-text hover:text-transparent transition-all duration-500">
                                 {selectedLanguage === 'en' ? "Let's Work Together" : selectedLanguage === 'fr' ? "Travaillons Ensemble" : "Lass uns zusammenarbeiten"}
                             </span>
@@ -90,10 +90,10 @@ export const ContactContainer = () => {
                         <div className="space-y-8 order-2 lg:order-1">
                             {/* Contact Description */}
                             <div className="space-y-6">
-                                <h2 className={`text-2xl md:text-3xl font-[briem-bold] ${dark ? 'text-black' : 'text-white'}`}>
+                                <h2 className={`text-2xl md:text-3xl font-[roboto-bold] ${dark ? 'text-black' : 'text-white'}`}>
                                     {selectedLanguage === 'en' ? "Get In Touch" : selectedLanguage === 'fr' ? "Entrons en Contact" : "Kontakt aufnehmen"}
                                 </h2>
-                                <p className={`text-lg md:text-xl font-[briem-medium] ${dark ? 'text-gray-600' : 'text-gray-300'} leading-relaxed`}>
+                                <p className={`text-lg md:text-xl font-[roboto-regular] ${dark ? 'text-gray-600' : 'text-gray-300'} leading-relaxed`}>
                                     {selectedLanguage === 'en'
                                         ? "I'm always open to discussing new opportunities, collaborations, or just having a chat about technology and development."
                                         : selectedLanguage === 'fr'
@@ -105,7 +105,7 @@ export const ContactContainer = () => {
 
                             {/* Social Links - Enhanced */}
                             <div className="space-y-4">
-                                <h3 className={`text-xl font-[briem-bold] ${dark ? 'text-black' : 'text-white'} mb-6`}>
+                                <h3 className={`text-xl font-[roboto-bold] ${dark ? 'text-black' : 'text-white'} mb-6`}>
                                     {selectedLanguage === 'en' ? "Connect With Me" : selectedLanguage === 'fr' ? "Connectez-vous avec Moi" : "Verbinden Sie sich mit mir"}
                                 </h3>
 
@@ -121,7 +121,7 @@ export const ContactContainer = () => {
                                             <FaGithub className="text-[#4c285c] text-xl group-hover:scale-110 transition-transform duration-300" />
                                         </div>
                                         <div className="flex-1">
-                                            <p className="font-[briem-bold] text-lg group-hover:text-[#4c285c] transition-colors duration-300">
+                                            <p className="font-[roboto-bold] text-lg group-hover:text-[#4c285c] transition-colors duration-300">
                                                 {selectedLanguage === 'en' ? "Visit My GitHub" : selectedLanguage === 'fr' ? "Visitez Mon GitHub" : "Besuchen Sie mein GitHub"}
                                             </p>
                                             <p className={`text-sm ${dark ? 'text-gray-600' : 'text-gray-400'}`}>
@@ -141,7 +141,7 @@ export const ContactContainer = () => {
                                             <FaLinkedin className="text-[#0077B5] text-xl group-hover:scale-110 transition-transform duration-300" />
                                         </div>
                                         <div className="flex-1">
-                                            <p className="font-[briem-bold] text-lg group-hover:text-[#0077B5] transition-colors duration-300">
+                                            <p className="font-[roboto-bold] text-lg group-hover:text-[#0077B5] transition-colors duration-300">
                                                 {selectedLanguage === 'en' ? "Visit My LinkedIn" : selectedLanguage === 'fr' ? "Visitez Mon LinkedIn" : "Besuchen Sie mein LinkedIn"}
                                             </p>
                                             <p className={`text-sm ${dark ? 'text-gray-600' : 'text-gray-400'}`}>
@@ -166,7 +166,7 @@ export const ContactContainer = () => {
                                 >
                                     {/* Form Header */}
                                     <div className="text-center mb-8">
-                                        <h3 className={`text-2xl font-[briem-bold] ${dark ? 'text-black' : 'text-white'} mb-2`}>
+                                        <h3 className={`text-2xl font-[roboto-bold] ${dark ? 'text-black' : 'text-white'} mb-2`}>
                                             {selectedLanguage === 'en' ? "Send Me a Message" : selectedLanguage === 'fr' ? "Envoyez-moi un Message" : "Senden Sie mir eine Nachricht"}
                                         </h3>
                                         <p className={`${dark ? 'text-gray-600' : 'text-gray-400'}`}>
@@ -176,7 +176,7 @@ export const ContactContainer = () => {
 
                                     {/* Name Field */}
                                     <div className="space-y-2">
-                                        <label className={`flex items-center gap-2 text-lg font-[briem-medium] ${dark ? 'text-black' : 'text-white'} hover:text-[#2596be] transition-colors duration-300`}>
+                                        <label className={`flex items-center gap-2 text-lg font-[roboto-regular] ${dark ? 'text-black' : 'text-white'} hover:text-[#2596be] transition-colors duration-300`}>
                                             <FaUser className="text-[#2596be]" />
                                             {selectedLanguage === 'en' ? "Your Name" : selectedLanguage === 'fr' ? "Votre Nom" : "Ihr Name"}
                                         </label>
@@ -193,7 +193,7 @@ export const ContactContainer = () => {
 
                                     {/* Email Field */}
                                     <div className="space-y-2">
-                                        <label className={`flex items-center gap-2 text-lg font-[briem-medium] ${dark ? 'text-black' : 'text-white'} hover:text-[#2596be] transition-colors duration-300`}>
+                                        <label className={`flex items-center gap-2 text-lg font-[roboto-regular] ${dark ? 'text-black' : 'text-white'} hover:text-[#2596be] transition-colors duration-300`}>
                                             <FaEnvelope className="text-[#2596be]" />
                                             {selectedLanguage === 'en' ? "Your Email" : selectedLanguage === 'fr' ? "Votre Email" : "Ihre Email"}
                                         </label>
@@ -210,7 +210,7 @@ export const ContactContainer = () => {
 
                                     {/* Message Field */}
                                     <div className="space-y-2">
-                                        <label className={`flex items-center gap-2 text-lg font-[briem-medium] ${dark ? 'text-black' : 'text-white'} hover:text-[#2596be] transition-colors duration-300`}>
+                                        <label className={`flex items-center gap-2 text-lg font-[roboto-regular] ${dark ? 'text-black' : 'text-white'} hover:text-[#2596be] transition-colors duration-300`}>
                                             <FaComment className="text-[#2596be]" />
                                             {selectedLanguage === 'en' ? "Your Message" : selectedLanguage === 'fr' ? "Votre Message" : "Ihre Nachricht"}
                                         </label>
@@ -229,7 +229,7 @@ export const ContactContainer = () => {
                                     {messageSent && (
                                         <div className="flex items-center gap-3 p-4 bg-green-500/10 border border-green-500/20 rounded-xl">
                                             <FaCheckCircle className="text-green-500 text-xl" />
-                                            <p className="text-green-500 font-[briem-medium]">
+                                            <p className="text-green-500 font-[roboto-regular]">
                                                 {selectedLanguage === 'en' ? "Message sent successfully!" : selectedLanguage === 'fr' ? "Message envoyé avec succès!" : "Nachricht erfolgreich gesendet!"}
                                             </p>
                                         </div>
@@ -239,7 +239,7 @@ export const ContactContainer = () => {
                                     <button
                                         type="submit"
                                         disabled={isLoading}
-                                        className={`group relative w-full overflow-hidden flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-[briem-bold] text-lg shadow-xl transition-all duration-300 ${
+                                        className={`group relative w-full overflow-hidden flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-[roboto-bold] text-lg shadow-xl transition-all duration-300 ${
                                             isLoading
                                                 ? 'bg-gray-400 cursor-not-allowed'
                                                 : 'bg-gradient-to-r from-[#2596be] to-[#1e7a9a] text-white hover:shadow-2xl hover:shadow-[#2596be]/25 hover:scale-105'

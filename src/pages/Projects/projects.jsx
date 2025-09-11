@@ -21,9 +21,9 @@ export const Projects = () => {
 
     return (
         <>
-            <Element name='projects' className="text-white dark:text-black font-[briem-medium] md:py-14 lg:py-16 py-20">
+            <Element name='projects' className="text-white dark:text-black font-[roboto-regular] md:py-14 lg:py-16 py-20">
                 <span className='w-[100%] flex justify-center'>
-                    <h1 className='text-[35px] md:text-[35px] lg:text-[50px] xl:text-[60px] cursor-pointer hover:text-[#2596be] transition duration-300 font-[briem-bold]'>
+                    <h1 className='text-[35px] md:text-[35px] lg:text-[50px] xl:text-[60px] cursor-pointer hover:text-[#2596be] transition duration-300 font-[roboto-bold]'>
                         <TransText en='Projects' fr='Projets' de='Projekte' />
                     </h1>
                 </span>
@@ -50,11 +50,11 @@ export const Projects = () => {
 
                                     {/* Project Content */}
                                     <div className="space-y-4">
-                                        <h3 className={`text-xl md:text-2xl font-[briem-bold] ${dark ? 'text-black' : 'text-white'} group-hover:text-[#2596be] transition-colors duration-300`}>
+                                        <h3 className={`text-xl md:text-2xl font-[roboto-bold] ${dark ? 'text-black' : 'text-white'} group-hover:text-[#2596be] transition-colors duration-300`}>
                                             {project.title}
                                         </h3>
 
-                                        <p className={`text-sm md:text-base font-[briem-medium] ${dark ? 'text-gray-700' : 'text-gray-300'} line-clamp-3`}>
+                                        <p className={`text-sm md:text-base font-[roboto-regular] ${dark ? 'text-gray-700' : 'text-gray-300'} line-clamp-3`}>
                                             <TransText en={project.description.en} fr={project.description.fr} de={project.description.de} />
                                         </p>
 
@@ -63,7 +63,7 @@ export const Projects = () => {
                                             {project.technologies.map((tech, index) => (
                                                 <span
                                                     key={index}
-                                                    className="tech-badge inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-[briem-medium] bg-white/10 backdrop-blur-sm border border-white/20"
+                                                    className="tech-badge inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-[roboto-regular] bg-white/10 backdrop-blur-sm border border-white/20"
                                                     style={{ color: tech?.color }}
                                                 >
                                                     {tech?.icon}
@@ -77,7 +77,7 @@ export const Projects = () => {
                                             <p
                                                 onClick={() => navigate(`/project/${project.id}`)}
                                                 rel="noopener noreferrer"
-                                                className={`project-button flex items-center gap-2 px-4 py-2 border-2 border-[#2596be] hover:bg-[#2596be] ${dark ? 'text-black hover:text-white' : 'text-white'} rounded-lg font-[briem-medium] text-sm flex-1 justify-center`}
+                                                className={`project-button flex items-center gap-2 px-4 py-2 border-2 border-[#2596be] hover:bg-[#2596be] ${dark ? 'text-black hover:text-white' : 'text-white'} rounded-lg font-[roboto-regular] text-sm flex-1 justify-center`}
                                             >
                                                 {selectedLanguage === 'en' ? 'See more' : selectedLanguage === 'fr' ? 'Voir plus' : 'Mehr sehen'}
                                             </p>
