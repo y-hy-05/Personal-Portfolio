@@ -1,11 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import {
-    FaReact, FaNodeJs, FaPython, FaHtml5, FaCss3, FaJs, FaGithub, FaExternalLinkAlt, FaDatabase, FaMobile, FaArrowLeft, FaCheck, FaCog, FaLightbulb, FaImages, FaChevronLeft, FaChevronRight
+    FaGithub, FaExternalLinkAlt,FaArrowLeft, FaCheck, FaCog, FaImages, FaChevronLeft, FaChevronRight
 } from 'react-icons/fa';
-import {
-    SiTailwindcss, SiMongodb, SiExpress, SiFirebase, SiTypescript, SiNextdotjs, SiFlutter, SiDjango
-} from 'react-icons/si';
+
 import ParticlesComponentlight from '../Layout/components/particleslight';
 import ParticlesComponentDark from '../Layout/components/particlesdark';
 import { MyContext } from '../../utils/ContextProvider';
@@ -15,7 +13,7 @@ import './projects.css';
 export const Project = () => {
     const { id } = useParams();
     const navigate = useNavigate();
-    const [dark, setDark, skills, projects, selectedLanguage, setSelectedLanguage, savedSelectedLanguage] = useContext(MyContext);
+    const [dark,projects, selectedLanguage,] = useContext(MyContext);
 
     // Carousel state
     const [currentImageIndex, setCurrentImageIndex] = useState(0);

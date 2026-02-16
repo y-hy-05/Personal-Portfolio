@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { MyContext } from '../../../utils/ContextProvider';
-import { Element, Link } from 'react-scroll';
+import { Element} from 'react-scroll';
 import TransText from '../../../components/TransText';
 
 const AboutContainer = () => {

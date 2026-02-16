@@ -1,5 +1,5 @@
-import React, { createContext, useEffect, useState } from "react"
-import { FaBootstrap, FaCss3, FaDatabase, FaHtml5, FaLaravel, FaPhp, FaReact, FaSass } from "react-icons/fa";
+import { createContext, useEffect, useState } from "react"
+import { FaDatabase,FaLaravel, FaPhp, FaReact,} from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiExpo, SiInertia, SiPostman, SiTailwindcss } from "react-icons/si";
 import lionsgeek from '../assets/img/lionsgeek.svg'
