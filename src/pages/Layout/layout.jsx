@@ -5,7 +5,7 @@ import ParticlesComponentDark from './components/particlesdark';
 import ParticlesComponentlight from './components/particleslight';
 import { Header } from '../../layouts/Header';
 export const Layout = () => {
-    const [dark , toggleBoolean] = useContext(MyContext)
+    const [dark ] = useContext(MyContext)
     return (
         <>
             <div className="App">
