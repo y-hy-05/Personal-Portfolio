@@ -4,6 +4,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { SiExpo, SiInertia, SiPostman, SiTailwindcss } from "react-icons/si";
 import lionsgeek from '../assets/img/lionsgeek.svg'
 import yesAfrica from '../assets/img/yesAfrica.png'
+import asshop from '../assets/img/asshoplogo.png'
 import lionsgeek1 from '../assets/img/lg1.png'
 import lionsgeek2 from '../assets/img/lg2.png'
 import lionsgeek3 from '../assets/img/lg3.png'
@@ -12,6 +13,12 @@ import yes1 from '../assets/img/yes1.png'
 import yes2 from '../assets/img/yes2.png'
 import yes3 from '../assets/img/yes3.png'
 import yes4 from '../assets/img/yes4.png'
+import asmob1 from '../assets/img/asmob1.png'
+import asmob2 from '../assets/img/asmob2.png'
+import asmob3 from '../assets/img/asmob3.png'
+import asShop1 from '../assets/img/asshop1.png'
+import asShop2 from '../assets/img/asshop2.png'
+import asShop3 from '../assets/img/asshop3.png'
 
 export const MyContext = createContext()
 
@@ -86,9 +93,9 @@ export const MyProvider = ({ children }) => {
             },
             technologies: [
                 skills[1],
-                skills[0],
+                // skills[0],
                 skills[5],
-                skills[6],
+                // skills[6],
                 skills[7],
                 skills[8],
                 skills[2]
@@ -144,9 +151,9 @@ export const MyProvider = ({ children }) => {
             },
             technologies: [
                 skills[1],
-                skills[0],
                 skills[5],
-                skills[6],
+                // skills[0],
+                // skills[6],
                 skills[7],
                 skills[8],
                 skills[2]
@@ -195,6 +202,129 @@ export const MyProvider = ({ children }) => {
             site: "https://youthempowermentsummit.africa",
             github: "https://github.com/lionsgeeks/yes-africa"
         },
+        {
+            id: 3,
+            title: "AS Shop",
+            description: {
+                en: 'A comprehensive appointment and management system built with Laravel and React. AS-Shop is a multi-role platform designed for scheduling appointments, managing user hierarchies, and tracking performance metrics. The application includes role-based dashboards for Admins, Assistants, Executives, Recruiters, and Representatives, each with tailored interfaces and functionalities. With advanced appointment management, bonus tracking, performance analytics, and real-time pairing systems, AS-Shop streamlines organizational workflow and enhances team collaboration.',
+                de: 'Ein umfassendes Termin- und Verwaltungssystem, das mit Laravel und React entwickelt wurde. AS-Shop ist eine Multi-Rollen-Plattform zur Verwaltung von Terminen, Benutzerhierarchien und Leistungsmetriken. Die Anwendung bietet rollenbasierte Dashboards für Administratoren, Assistenten, Führungskräfte, Recruiter und Vertreter mit maßgeschneiderten Schnittstellen. Mit fortschrittlicher Terminverwaltung, Bonusverfolgung, Leistungsanalysen und Echtzeit-Paarungssystemen optimiert AS-Shop Arbeitsabläufe und verbessert die Zusammenarbeit.',
+                fr: 'Un système complet de gestion des rendez-vous et d\'administration construit avec Laravel et React. AS-Shop est une plateforme multi-rôles conçue pour planifier les rendez-vous, gérer les hiérarchies d\'utilisateurs et suivre les métriques de performance. L\'application inclut des tableaux de bord basés sur les rôles pour les administrateurs, assistants, cadres, recruteurs et représentants. Avec une gestion avancée des rendez-vous, un suivi des bonus, une analyse des performances et des systèmes d\'appairage en temps réel, AS-Shop optimise les flux de travail et améliore la collaboration.'
+            },
+            technologies: [
+                skills[3],
+                skills[1],
+                skills[5],
+                // skills[0],
+                // skills[6],
+                skills[7],
+                skills[2]
+            ],
+            logo: asshop,
+            features: {
+                en: [
+                    "Multi-role dashboard system (Admin, Assistant, Executive, Recruiter, Representative)",
+                    "Advanced appointment scheduling and management",
+                    "Real-time pairing system",
+                    "Performance tracking and analytics",
+                    "Bonus management and tracking",
+                    "Payroll management for executives",
+                    "User authentication with role-based access control",
+                    "Responsive design for desktop and mobile"
+                ],
+                de: [
+                    "Multi-Rollen-Dashboard-System (Admin, Assistent, Führungskraft, Recruiter, Vertreter)",
+                    "Fortgeschrittene Terminplanung und -verwaltung",
+                    "Echtzeit-Paarungssystem",
+                    "Leistungsverfolgung und Analytik",
+                    "Bonusverwaltung und -verfolgung",
+                    "Gehaltsabrechnung für Führungskräfte",
+                    "Benutzerauthentifizierung mit rollenbasierter Zugriffskontrolle",
+                    "Responsive Design für Desktop und Mobilgeräte"
+                ],
+                fr: [
+                    "Système de tableau de bord multi-rôles (Admin, Assistant, Cadre, Recruteur, Représentant)",
+                    "Planification et gestion avancées des rendez-vous",
+                    "Système d'appairage en temps réel",
+                    "Suivi et analyse des performances",
+                    "Gestion et suivi des bonus",
+                    "Gestion de la masse salariale pour les cadres",
+                    "Authentification des utilisateurs avec contrôle d'accès basé sur les rôles",
+                    "Design réactif pour ordinateur de bureau et mobile"
+                ]
+            },
+            screenshots: [
+                asShop1,
+                asShop2,
+                asShop3,
+            ],
+            role: {
+                en: 'Development',
+                fr: 'Développement',
+                de: 'Entwicklung'
+            },
+            site: "https://asshop.org/",
+            github: ""
+        },
+        {
+            id: 4,
+            title: "AS Shop Mobile",
+            description: {
+                en:"A mobile management and scheduling app built with Expo and React Native. AS-Shop Mobile enables on-the-go handling of appointments, user roles, and performance data. The application provides tailored interfaces for assistants, representatives, and managers with real-time sync, statistics, and optimized workflow features.",
+                de: "Eine mobile Verwaltungs- und Terminplanungs-App, entwickelt mit Expo und React Native. AS-Shop Mobile ermöglicht die Verwaltung von Terminen, Benutzerrollen und Leistungsdaten unterwegs. Die Anwendung bietet angepasste Oberflächen für Assistenten, Vertreter und Führungskräfte mit Echtzeit-Synchronisierung, Statistiken und optimierten Arbeitsabläufen.",
+                fr: "Une application mobile de gestion et de planification développée avec Expo et React Native. AS-Shop Mobile permet de gérer les rendez-vous, les rôles utilisateurs et les données de performance en mobilité. L’application propose des interfaces adaptées pour assistants, représentants et managers avec synchronisation temps réel et statistiques."
+            },
+            technologies: [
+                skills[3],
+                skills[4],
+                skills[5],
+                skills[7],
+                skills[2]
+            ],
+            logo: asshop,
+            features: {
+                en: [
+                    "Multi-role dashboard system (Admin, Assistant, Executive, Recruiter, Representative)",
+                    "Advanced appointment scheduling and management",
+                    "Real-time pairing system",
+                    "Performance tracking and analytics",
+                    "Bonus management and tracking",
+                    "Payroll management for executives",
+                    "User authentication with role-based access control",
+                ],
+                de: [
+                    "Multi-Rollen-Dashboard-System (Admin, Assistent, Führungskraft, Recruiter, Vertreter)",
+                    "Fortgeschrittene Terminplanung und -verwaltung",
+                    "Echtzeit-Paarungssystem",
+                    "Leistungsverfolgung und Analytik",
+                    "Bonusverwaltung und -verfolgung",
+                    "Gehaltsabrechnung für Führungskräfte",
+                    "Benutzerauthentifizierung mit rollenbasierter Zugriffskontrolle",
+                ],
+                fr: [
+                    "Système de tableau de bord multi-rôles (Admin, Assistant, Cadre, Recruteur, Représentant)",
+                    "Planification et gestion avancées des rendez-vous",
+                    "Système d'appairage en temps réel",
+                    "Suivi et analyse des performances",
+                    "Gestion et suivi des bonus",
+                    "Gestion de la masse salariale pour les cadres",
+                    "Authentification des utilisateurs avec contrôle d'accès basé sur les rôles",
+                ]
+            },
+            screenshots: [
+                asmob1,
+                asmob2,
+                asmob3,
+            ],
+            role: {
+                en: 'Development',
+                fr: 'Développement',
+                de: 'Entwicklung'
+            },
+            site: "https://asshop.org/",
+            github: ""
+        },
+        
+
     ];
 
     const savedSelectedLanguage = localStorage.getItem('selectedLanguage')
