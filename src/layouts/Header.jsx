@@ -1,28 +1,14 @@
-import React, { useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import '../pages/Layout/components/app.sass'
 import "./app.css"
 import { MyContext } from '../utils/ContextProvider';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-scroll';
-import TransText from '../components/TransText';
-import Radio from '../components/LangDropDown';
-
 export const Header = () => {
 
-    const [dark, setDark, skills, projects, selectedLanguage, setSelectedLanguage, savedSelectedLanguage] = useContext(MyContext)
+    const [dark, setDark,selectedLanguage] = useContext(MyContext)
 
     console.log('from header', selectedLanguage);
-
-
-    const [respNav, setRespNav] = useState(true)
-
-    const navFunction = () => {
-
-        setRespNav(!respNav)
-        document.body.classList.toggle("overflow-hidden")
-
-    }
-
 
     const navigate = useNavigate()
 

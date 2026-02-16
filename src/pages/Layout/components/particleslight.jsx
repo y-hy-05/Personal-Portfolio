@@ -28,6 +28,9 @@ const ParticlesComponentlight = (props) => {
     const particlesLoaded = (container) => {
     };
 
+    console.log(init);
+    
+
     
 
     const options = useMemo(
