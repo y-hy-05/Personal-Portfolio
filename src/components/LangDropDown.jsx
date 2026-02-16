@@ -3,7 +3,7 @@ import { useContext, useState, useEffect, useRef } from 'react';
 import { MyContext } from '../utils/ContextProvider';
 
 const Radio = () => {
-    const [dark, selectedLanguage, setSelectedLanguage] = useContext(MyContext);
+    const [dark, setDark,skills,projects, selectedLanguage, setSelectedLanguage, savedSelectedLanguage] = useContext(MyContext);
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef(null);
 

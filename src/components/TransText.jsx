@@ -1,9 +1,9 @@
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 import { MyContext } from '../utils/ContextProvider';
 
 const TransText = (props) => {
 
-    const [selectedLanguage] = useContext(MyContext);    
+    const [dark, setDark,skills,projects, selectedLanguage, setSelectedLanguage, savedSelectedLanguage] = useContext(MyContext);    
 
     return props[selectedLanguage];
 

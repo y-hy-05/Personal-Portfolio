@@ -1,4 +1,4 @@
-import { useContext, useRef, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import "./app.css"
 import "./app.sass"
 import { FaGithub, FaLinkedin, FaPaperPlane, FaUser, FaEnvelope, FaComment, FaCheckCircle, FaSpinner } from "react-icons/fa";
@@ -9,7 +9,7 @@ import emailjs from '@emailjs/browser';
 
 
 export const ContactContainer = () => {
-    const [dark,selectedLanguage] = useContext(MyContext)
+    const [dark, setDark, skills, projects, selectedLanguage, setSelectedLanguage, savedSelectedLanguage] = useContext(MyContext)
 
 
     const [message, setMessage] = useState({

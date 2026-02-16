@@ -1,3 +1,4 @@
+import React from 'react';
 import ParticlesComponentDark from '../Layout/components/particlesdark';
 
 export const Wrong = () => {
